@@ -1,6 +1,6 @@
 var app = angular.module("myModule",[ ]);
 app.controller("recordsController", function($scope, $http){
-	var url = "data/data.json";
+	var url = "learn/data.json";
 	$http.get(url).success(funciton (data,status,headers,config){
 		$scope.records=data;
 	}).error(function(data,status,headers,config){
